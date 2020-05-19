@@ -7,6 +7,7 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  position: relative;
 }
 
 .header {
@@ -14,18 +15,332 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  justify-content: center;
+}
+
+.header__logo{
+  top: 30px;
+  left: 64px;
+  position: absolute;
+  z-index: 3;
+  background: no-repeat center;
+  background-size: cover;
+}
+
+.header__title-text{
+  margin-left: 64px;
+  width: 730px;
+  display: flex;
+  font-size: 102px;
+  font-weight: bold;
+  line-height: 96px;
+}
+
+.header__subtitle-text{
+  width: 338px;
+  left:64px;
+  bottom: 30px;
+  position: absolute;
+  z-index: 3;
+  height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.header__link{
+  text-decoration: none;
+  color: #2f80ed;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  position: absolute;
+  background-color: #2f80ed;
+  right: 0;
+  top: 64px;
+  z-index: 2;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
+.header__illustration{
+  height: 608px;
+  width: 765px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.description{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.description__two-columns{
+  width: 80%;
+  display: flex;
+
+}
+
+.description__two-columns-brief{
+  width: 175px;
+  color: #2f80ed;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  justify-content: flex-start;
+  margin-right: auto;
+}
+
+.description__two-columns-main-text{
+  min-width: 784px;
+  width: 80%;
+  justify-content: space-between;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+}
+
+.description__two-columns-paragraph{
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+
+.description_two-columns-span-accent{
+  font-weight: bold;
+}
+
+.digits{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.digits__section-title{
+  line-height: 69px;
+  width: 60%;
+  font-size: 60px;
+  font-weight: bold;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.digits__section-subtitle{
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto auto;
+}
+.digits__table-tr{
+  width: 1100px;
+  margin: auto;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.digits__table-heading{
+  line-height:1.15;
+  font-size: 24px;
+  font-weight:bold;
+}
+.digits__table-text{
+  line-height:1.2;
+  font-size:18px;
+  font-weight:normal;
+  margin-top:20px;
+}
+.digits__table-cell{
+  width:250px;
+  margin-top:60px;
+}
+.feinman{
+  min-height: 890px;
+  margin-top: 100px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+}
+
+.feynman__title{
+  padding-top: 100px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  width: 648px;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto auto;
+}
+
+.feynman__subtitle{
+  padding-top: 70px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto auto;
+  position: absolute;
+}
+
+.feynman__link{
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 3;
+  display: flex;
+  position: absolute;
+}
+
+.feynman__illustration{
+  height: 637px;
+  width: 867px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.kaufman{
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color:  #1f1f1f;
   color: white;
+  position: relative;
+  background-size: cover;
+  padding-bottom: 90px;
+  overflow: hidden;
+}
+
+.kaufman__title_theme_dark{
+  padding-top: 20px;
+  /*line-height: 69px;*/
+  /*font-size: 60px;*/
+  /*font-weight: bold;*/
+}
+
+.kaufman__subtitle_theme_dark{
+  /*line-height: 34px;*/
+  /*font-size: 24px;*/
+  /*font-weight: normal;*/
+}
+
+.kaufman__heading_theme_dark{
+  /*line-height: 1.15;*/
+  /*font-size: 24px;*/
+  /*font-weight: bold;*/
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.kaufman__text_theme_dark{
+  /*line-height: 1.2;*/
+  /*font-size: 18px;*/
+  /*font-weight: normal;*/
+}
+
+.kaufman__cell_theme_dark{
+  width: 200px;
+  /*color: white;*/
   margin-right: 0;
   margin-top: 80px;
+  z-index: 2;
 }
+
+.kaufman__triangle{
+  top: 0;
+  height: 877px;
+  width: 877px;
+  right: -210px;
+  position: absolute;
+  z-index: 1;
+  background-size: cover;
+  background: no-repeat center;
+}
+
+.footer{
+  background-color:  #1f1f1f;
+  padding-top: 60px;
+  color:white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.footer__column{
+  width: 90%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-direction: row;
+  min-height: 350px;
+}
+.footer__column-content-copyright{
+  flex-basis: 711px;
+}
+
+.footer__logo{
+  display: flex;
+  justify-content: flex-start;
+  top: 0;
+  left: 0;
+  position: static;
+}
+
+.footer__author{
+  bottom: 18px;
+  font-weight: normal;
+  font-size: 18px;
+  position: absolute;
+}
+
+.footer__column-content-info{
+  list-style-type: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+}
+
+.footer__column-heading{
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer__column-content-social{
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+
+
+/* и элемента с модификатором вида ключ-значение */
+/*.table__cell_theme_dark {*/
+/*  width: 200px;*/
+/*  color: white;*/
+/*  margin-right: 0;*/
+/*  margin-top: 80px;*/
+/*}*/
