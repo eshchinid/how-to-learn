@@ -215,6 +215,7 @@
   display: flex;
   position: absolute;
   color: black;
+  text-decoration: none;
 }
 
 .feynman__illustration{
@@ -245,8 +246,7 @@
 
 
 .table__heading_theme_dark{
-  margin: auto;
-  margin-bottom: 20px;
+  margin: auto auto 20px;
 }
 
 
