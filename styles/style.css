@@ -22,13 +22,15 @@
   justify-content: center;
 }
 
+.logo{
+  background-size: cover;
+  position: absolute;
+}
+
 .logo__place_header{
   top: 30px;
   left: 64px;
-  position: absolute;
   z-index: 3;
-  /* background: no-repeat center; */
-  background-size: cover;
 }
 
 .header__title{
@@ -57,7 +59,6 @@
   color: #2f80ed;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -218,7 +219,8 @@
   text-decoration: none;
 }
 
-.feynman__illustration{
+.feinman__image{
+  background-image: url(../images/feynman.png);
   height: 637px;
   width: 867px;
   position: absolute;
@@ -243,13 +245,9 @@
   padding-top: 20px;
 }
 
-
-
 .table__heading_theme_dark{
   margin: auto auto 20px;
 }
-
-
 
 .table__cell_theme_dark{
   width: 200px;
@@ -260,6 +258,7 @@
 }
 
 .kaufman__triangle{
+  background-image: url(../images/kaufman-triangle.svg);
   top: 0;
   height: 877px;
   width: 877px;
@@ -267,7 +266,6 @@
   position: absolute;
   z-index: 1;
   background-size: cover;
-  background: no-repeat center;
 }
 
 .footer{
@@ -278,6 +276,7 @@
   display: flex;
   justify-content: center;
 }
+
 .footer__columns{
   width: 90%;
   display: flex;
@@ -288,7 +287,8 @@
 }
 
 .footer__column {
-  list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__column_content_copyright{
@@ -300,7 +300,6 @@
   justify-content: flex-start;
   top: 0;
   left: 0;
-  position: static;
 }
 
 .footer__author{
@@ -310,15 +309,7 @@
   position: absolute;
 }
 
-.footer__column_content_info{
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-  text-decoration: none;
-  color: white;
-}
-
-.footer__column_heading{
+.footer__column-heading{
   font-size: 18px;
   font-weight: bold;
   margin-top: 0;
@@ -339,12 +330,3 @@
   text-decoration: none;
   color: white;
 }
-
-
-/* и элемента с модификатором вида ключ-значение */
-/*.table__cell_theme_dark {*/
-/*  width: 200px;*/
-/*  color: white;*/
-/*  margin-right: 0;*/
-/*  margin-top: 80px;*/
-/*}*/
