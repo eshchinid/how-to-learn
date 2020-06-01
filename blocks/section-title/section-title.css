@@ -1,5 +1,5 @@
 @import url(./_theme/section-title_theme_dark.css);
-.section-title{
+.section__title{
   line-height: 69px;
   width: 60%;
   font-size: 60px;

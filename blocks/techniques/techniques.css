@@ -1,4 +1,4 @@
-@import url(./_title/techniques_title.css);
+@import url(__title/techniques__title.css);
 .techniques {
   width: 80%;
   margin: 100px auto auto;

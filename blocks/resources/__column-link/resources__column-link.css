@@ -1,0 +1,4 @@
+.resources__column-link:hover{
+  opacity: 0.3;
+  transition: opacity 1s ease-out 0.5s;
+}

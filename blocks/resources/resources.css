@@ -1,5 +1,6 @@
 @import url(./__logo/resources__logo.css);
 @import url(./__logo-zone/resources__logo-zone.css);
+@import url(./__column-link/resources__column-link.css);
 .resources{
   margin-top: 100px;
   display: flex;

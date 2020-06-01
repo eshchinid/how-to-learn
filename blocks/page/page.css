@@ -9,7 +9,4 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
   position: relative;
 }
-.links__opacity:hover{
-  opacity: 0.3;
-  transition: opacity 1s ease-out 0.5s;
-}
+
