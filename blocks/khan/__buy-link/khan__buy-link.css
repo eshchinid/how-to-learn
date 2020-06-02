@@ -4,6 +4,8 @@
   font-weight:normal;
   color: #2f80ed;
   text-decoration: none;
+  position: absolute;
+  /*что "<p>", <div>, что "position: absolute" - решают проблему с сылкой, выглядит все как в брифе, если есть конкретные требования, прошу предоставить*/
 }
 .khan__buy-link:hover{
   opacity: 0.3;
